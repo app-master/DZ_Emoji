@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
-                            <tableViewSection headerTitle="Section 1" id="EZq-IJ-9MC">
+                            <tableViewSection headerTitle="Symbol" id="EZq-IJ-9MC">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OSw-iX-Zoh">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -28,10 +28,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0V-he-7us">
-                                                    <rect key="frame" x="20" y="6" width="374" height="30"/>
+                                                    <rect key="frame" x="20" y="6" width="374" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                    <connections>
+                                                        <action selector="actionTextChanged:" destination="HZL-en-euC" eventType="editingChanged" id="gBk-Ny-3Yd"/>
+                                                        <outlet property="delegate" destination="HZL-en-euC" id="Tz8-tw-Xig"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -44,7 +48,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section 2" id="YnG-kZ-Rvt">
+                            <tableViewSection headerTitle="Name" id="YnG-kZ-Rvt">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cCz-xD-mD2">
                                         <rect key="frame" x="0.0" y="100" width="414" height="44"/>
@@ -54,10 +58,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHL-An-LNJ">
-                                                    <rect key="frame" x="20" y="6" width="374" height="30"/>
+                                                    <rect key="frame" x="20" y="6" width="374" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                    <connections>
+                                                        <action selector="actionTextChanged:" destination="HZL-en-euC" eventType="editingChanged" id="5mt-tJ-O9F"/>
+                                                        <outlet property="delegate" destination="HZL-en-euC" id="xmc-nI-3if"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -70,7 +78,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section 3" id="hR8-cZ-FIv">
+                            <tableViewSection headerTitle="Description" id="hR8-cZ-FIv">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Rrr-Cu-BtS">
                                         <rect key="frame" x="0.0" y="172" width="414" height="44"/>
@@ -80,10 +88,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VeI-ry-5aV">
-                                                    <rect key="frame" x="20" y="6" width="374" height="30"/>
+                                                    <rect key="frame" x="20" y="6" width="374" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                    <connections>
+                                                        <action selector="actionTextChanged:" destination="HZL-en-euC" eventType="editingChanged" id="LK1-ha-CzW"/>
+                                                        <outlet property="delegate" destination="HZL-en-euC" id="wgJ-sW-bmc"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -96,7 +108,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section 4" id="Rzg-uR-8xb">
+                            <tableViewSection headerTitle="Usage" id="Rzg-uR-8xb">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DLA-ic-LXU">
                                         <rect key="frame" x="0.0" y="244" width="414" height="44"/>
@@ -106,10 +118,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Rc-ec-psw">
-                                                    <rect key="frame" x="20" y="6" width="374" height="30"/>
+                                                    <rect key="frame" x="20" y="6" width="374" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                                    <connections>
+                                                        <action selector="actionTextChanged:" destination="HZL-en-euC" eventType="editingChanged" id="uiQ-In-uE7"/>
+                                                        <outlet property="delegate" destination="HZL-en-euC" id="NaU-Ev-Mgk"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -140,6 +156,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionField" destination="VeI-ry-5aV" id="39k-Fg-AkY"/>
+                        <outlet property="nameField" destination="uHL-An-LNJ" id="wde-gO-nyA"/>
+                        <outlet property="saveButtonItem" destination="RsW-zI-a90" id="duH-Fx-dan"/>
+                        <outlet property="symbolField" destination="n0V-he-7us" id="Pzc-lD-DPU"/>
+                        <outlet property="usageField" destination="1Rc-ec-psw" id="9CW-fn-RJx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFC-pG-3kM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

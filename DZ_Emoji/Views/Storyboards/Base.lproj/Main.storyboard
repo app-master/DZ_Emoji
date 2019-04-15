@@ -17,22 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmojiCell" id="zQ2-2d-BtU">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zQ2-2d-BtU" id="ZBa-pj-YGu">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="zrE-l5-B3M" id="YUX-T0-SaV"/>
                             <outlet property="delegate" destination="zrE-l5-B3M" id="Ke4-DP-Dn0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="F0S-eB-1y4"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="F0S-eB-1y4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Kxv-zB-vpS">
+                            <connections>
+                                <action selector="addNewEmoji:" destination="zrE-l5-B3M" id="gwP-EI-xnW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="Re3-Cn-X12" kind="show" identifier="showAdditional" id="Tm4-pf-cKh"/>
                     </connections>

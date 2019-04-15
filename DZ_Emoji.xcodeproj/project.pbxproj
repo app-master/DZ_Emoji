@@ -15,6 +15,9 @@
 		CEEA7492226264F90057C254 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA7491226264F90057C254 /* ListTableViewController.swift */; };
 		CEEA749422626BDB0057C254 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA749322626BDB0057C254 /* EmojiTableViewController.swift */; };
 		CEEA74962262725C0057C254 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA74952262725C0057C254 /* Emoji.swift */; };
+		CEEA74992263581B0057C254 /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA74972263581B0057C254 /* EmojiCell.swift */; };
+		CEEA749A2263581B0057C254 /* EmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEA74982263581B0057C254 /* EmojiCell.xib */; };
+		CEEA749D22636F560057C254 /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA749C22636F560057C254 /* CellConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		CEEA7491226264F90057C254 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		CEEA749322626BDB0057C254 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
 		CEEA74952262725C0057C254 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		CEEA74972263581B0057C254 /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
+		CEEA74982263581B0057C254 /* EmojiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiCell.xib; sourceTree = "<group>"; };
+		CEEA749C22636F560057C254 /* CellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE07977D226499CF00A03DE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE07978022649A3B00A03DE3 /* Storyboards */,
+				CEEA749B2263582E0057C254 /* EmojiCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE07977E226499E800A03DE3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA749C22636F560057C254 /* CellConfigurator.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CE07977F22649A0C00A03DE3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA7491226264F90057C254 /* ListTableViewController.swift */,
+				CEEA749322626BDB0057C254 /* EmojiTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE07978022649A3B00A03DE3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA7481226263A30057C254 /* Main.storyboard */,
+				CEEA748F226264800057C254 /* Additional.storyboard */,
+				CEEA7486226263A50057C254 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE07978122649A6B00A03DE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA747D226263A30057C254 /* AppDelegate.swift */,
+				CEEA7484226263A50057C254 /* Assets.xcassets */,
+				CEEA7489226263A50057C254 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE98FC3C226499970016DF89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA74952262725C0057C254 /* Emoji.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CEEA7471226263A30057C254 = {
 			isa = PBXGroup;
 			children = (
@@ -60,17 +120,22 @@
 		CEEA747C226263A30057C254 /* DZ_Emoji */ = {
 			isa = PBXGroup;
 			children = (
-				CEEA747D226263A30057C254 /* AppDelegate.swift */,
-				CEEA74952262725C0057C254 /* Emoji.swift */,
-				CEEA7491226264F90057C254 /* ListTableViewController.swift */,
-				CEEA749322626BDB0057C254 /* EmojiTableViewController.swift */,
-				CEEA7481226263A30057C254 /* Main.storyboard */,
-				CEEA748F226264800057C254 /* Additional.storyboard */,
-				CEEA7484226263A50057C254 /* Assets.xcassets */,
-				CEEA7486226263A50057C254 /* LaunchScreen.storyboard */,
-				CEEA7489226263A50057C254 /* Info.plist */,
+				CE98FC3C226499970016DF89 /* Models */,
+				CE07977D226499CF00A03DE3 /* Views */,
+				CE07977F22649A0C00A03DE3 /* ViewControllers */,
+				CE07977E226499E800A03DE3 /* Managers */,
+				CE07978122649A6B00A03DE3 /* Supporting Files */,
 			);
 			path = DZ_Emoji;
+			sourceTree = "<group>";
+		};
+		CEEA749B2263582E0057C254 /* EmojiCell */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA74972263581B0057C254 /* EmojiCell.swift */,
+				CEEA74982263581B0057C254 /* EmojiCell.xib */,
+			);
+			path = EmojiCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEA749A2263581B0057C254 /* EmojiCell.xib in Resources */,
 				CEEA7488226263A50057C254 /* LaunchScreen.storyboard in Resources */,
 				CEEA7490226264800057C254 /* Additional.storyboard in Resources */,
 				CEEA7485226263A50057C254 /* Assets.xcassets in Resources */,
@@ -145,8 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEA749D22636F560057C254 /* CellConfigurator.swift in Sources */,
 				CEEA747E226263A30057C254 /* AppDelegate.swift in Sources */,
 				CEEA749422626BDB0057C254 /* EmojiTableViewController.swift in Sources */,
+				CEEA74992263581B0057C254 /* EmojiCell.swift in Sources */,
 				CEEA74962262725C0057C254 /* Emoji.swift in Sources */,
 				CEEA7492226264F90057C254 /* ListTableViewController.swift in Sources */,
 			);
@@ -296,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NAELVG29J;
-				INFOPLIST_FILE = DZ_Emoji/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DZ_Emoji/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NAELVG29J;
-				INFOPLIST_FILE = DZ_Emoji/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DZ_Emoji/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
