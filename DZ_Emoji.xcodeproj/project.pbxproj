@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE565ADB2268790B000C2354 /* PlistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE565ADA2268790B000C2354 /* PlistManager.swift */; };
 		CEEA747E226263A30057C254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA747D226263A30057C254 /* AppDelegate.swift */; };
 		CEEA7483226263A30057C254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEA7481226263A30057C254 /* Main.storyboard */; };
 		CEEA7485226263A50057C254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEA7484226263A50057C254 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE565ADA2268790B000C2354 /* PlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistManager.swift; sourceTree = "<group>"; };
 		CEEA747A226263A30057C254 /* DZ_Emoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZ_Emoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEA747D226263A30057C254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEEA7482226263A30057C254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEA749C22636F560057C254 /* CellConfigurator.swift */,
+				CE565ADA2268790B000C2354 /* PlistManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEA749D22636F560057C254 /* CellConfigurator.swift in Sources */,
+				CE565ADB2268790B000C2354 /* PlistManager.swift in Sources */,
 				CEEA747E226263A30057C254 /* AppDelegate.swift in Sources */,
 				CEEA749422626BDB0057C254 /* EmojiTableViewController.swift in Sources */,
 				CEEA74992263581B0057C254 /* EmojiCell.swift in Sources */,

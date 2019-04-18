@@ -20,7 +20,7 @@
                         <sections>
                             <tableViewSection headerTitle="Symbol" id="EZq-IJ-9MC">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OSw-iX-Zoh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="OSw-iX-Zoh">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OSw-iX-Zoh" id="E7s-Y9-qpb">
@@ -50,7 +50,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Name" id="YnG-kZ-Rvt">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cCz-xD-mD2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="cCz-xD-mD2">
                                         <rect key="frame" x="0.0" y="100" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cCz-xD-mD2" id="cGc-Pa-p5R">
@@ -61,7 +61,7 @@
                                                     <rect key="frame" x="20" y="6" width="374" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="next"/>
                                                     <connections>
                                                         <action selector="actionTextChanged:" destination="HZL-en-euC" eventType="editingChanged" id="5mt-tJ-O9F"/>
                                                         <outlet property="delegate" destination="HZL-en-euC" id="xmc-nI-3if"/>
@@ -80,7 +80,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Description" id="hR8-cZ-FIv">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Rrr-Cu-BtS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Rrr-Cu-BtS">
                                         <rect key="frame" x="0.0" y="172" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rrr-Cu-BtS" id="0Cd-o0-lou">
@@ -91,7 +91,7 @@
                                                     <rect key="frame" x="20" y="6" width="374" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="next"/>
                                                     <connections>
                                                         <action selector="actionTextChanged:" destination="HZL-en-euC" eventType="editingChanged" id="LK1-ha-CzW"/>
                                                         <outlet property="delegate" destination="HZL-en-euC" id="wgJ-sW-bmc"/>
@@ -110,7 +110,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Usage" id="Rzg-uR-8xb">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DLA-ic-LXU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="DLA-ic-LXU">
                                         <rect key="frame" x="0.0" y="244" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DLA-ic-LXU" id="Ncj-ep-e5C">
@@ -121,7 +121,7 @@
                                                     <rect key="frame" x="20" y="6" width="374" height="30.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="done"/>
                                                     <connections>
                                                         <action selector="actionTextChanged:" destination="HZL-en-euC" eventType="editingChanged" id="uiQ-In-uE7"/>
                                                         <outlet property="delegate" destination="HZL-en-euC" id="NaU-Ev-Mgk"/>

@@ -10,13 +10,15 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
 
-    var emojis = Emojis.loadEmojis()
+    var emojis: Emojis!
     
     var editingMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        emojis = prepareEmojis()
+        
         navigationItem.title = emojis.title
         navigationItem.leftBarButtonItem = editButtonItem
         tableView.register(UINib(nibName: "EmojiCell", bundle: nil), forCellReuseIdentifier: "EmojiCell")
@@ -30,8 +32,23 @@ class ListTableViewController: UITableViewController {
             editingMode = !editingMode
         }
     }
-}
     
+    // MARK: - Methods
+    
+    private func prepareEmojis() -> Emojis {
+        
+        if let emojis = Emojis.loadEmojisFromDirectory(PlistManager.plistDirectory) {
+            return emojis
+        } else {
+            let emojis = Emojis.createEmojis()
+            emojis.writeEmojisToDirectory(PlistManager.plistDirectory)
+            return emojis
+        }
+        
+    }
+    
+}
+
 // MARK: - Navigation
 
 extension ListTableViewController {
@@ -92,13 +109,20 @@ extension ListTableViewController {
             
             let insertEmoji = emojis[indexPath.row]
             emojis.insert(insertEmoji, at: indexPath.row + 1)
+            
             let newIndexPath = IndexPath(row: indexPath.row + 1, section: indexPath.section)
+            tableView.beginUpdates()
             tableView.insertRows(at: [newIndexPath], with: .top)
+            tableView.endUpdates()
+            
+            emojis.writeEmojisToDirectory(PlistManager.plistDirectory)
             
         } else if editingStyle == .delete {
             
             emojis.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .left)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            emojis.writeEmojisToDirectory(PlistManager.plistDirectory)
             
         }
         
@@ -150,6 +174,7 @@ extension ListTableViewController: EmojiTableViewControllerDelegate {
     }
     
     func saveEmoji(_ emoji: Emoji) {
+        
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.reloadRows(at: [indexPath], with: .fade)
         } else {
@@ -157,6 +182,8 @@ extension ListTableViewController: EmojiTableViewControllerDelegate {
             let indexPath = IndexPath(row: emojis.count - 1, section: 0)
             tableView.insertRows(at: [indexPath], with: .fade)
         }
+        
+        emojis.writeEmojisToDirectory(PlistManager.plistDirectory)
 
     }
     
